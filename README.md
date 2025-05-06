@@ -19,10 +19,6 @@
 
     pip install -r requirements.txt
 
-If you do not have a requirements file yet:
-
-    pip install django djangorestframework psycopg2-binary
-
 ### 3. Run database migrations
 
     python manage.py makemigrations
