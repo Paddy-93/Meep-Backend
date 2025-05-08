@@ -40,7 +40,10 @@ INSTALLED_APPS = [
 
     'rest_framework',  # This enables API functionality
     'jobs',            # This activates your jobs app
+    'users',           # Use the users model
 ]
+
+AUTH_USER_MODEL = 'users.CustomUser'
 
 
 
