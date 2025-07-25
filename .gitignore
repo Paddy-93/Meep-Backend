@@ -16,3 +16,5 @@ env.bak/
 *.pyc
 *.pyo
 db.sqlite3
+
+logs/

@@ -1,16 +1,20 @@
+# backend/asgi.py
+
 """
-ASGI config for backend project.
+ASGI config for the backend project.
 
-It exposes the ASGI callable as a module-level variable named ``application``.
+This file exposes the ASGI callable as a module-level variable named ``application``.
 
-For more information on this file, see
-https://docs.djangoproject.com/en/4.2/howto/deployment/asgi/
+ASGI (Asynchronous Server Gateway Interface) is the standard for asynchronous Python web apps and servers.
+
+More on ASGI: https://docs.djangoproject.com/en/stable/howto/deployment/asgi/
 """
 
 import os
-
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "backend.settings")
+# Set the default settings module for ASGI.
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "backend.settings.development")
 
+# Expose the ASGI application.
 application = get_asgi_application()
