@@ -1,0 +1,19 @@
+<!-- users/templates/users/email_verification_success.html -->
+<!--
+Template displayed when a user's email has been successfully verified.
+Used to confirm successful email verification and instruct the user to return to the app.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Verified</title>
+</head>
+<body>
+    <h2>✅ Email Verified!</h2>
+    <p>Thanks, {{ user.first_name }}. Your email has been successfully verified.</p>
+    <p>You may now return to the app and log in.</p>
+
+    <!-- Optional deep link button -->
+    <!-- <a href="app://login">Open App</a> -->
+</body>
+</html>
